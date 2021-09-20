@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace StringCalculator.Tests
+namespace Calculator.Tests
 {
     [TestClass()]
     public class CalculatorTests
@@ -11,7 +11,7 @@ namespace StringCalculator.Tests
             var expected = "0";
             var input = "";
             var numberParser = new NumberParser();
-            var inputChecker = new CalculatorChecker(new EmptyInputChecker());
+            var inputChecker = new CalculatorChecker();
             var separatorProvider = new SeparatorProvider();
             var numberExtractor = new NumberExtractor(separatorProvider);
             var sumCalculator = new SumCalculator(numberParser);
@@ -55,11 +55,12 @@ namespace StringCalculator.Tests
             var input = "1\n2,3";
             var expected = "6";
             var separators = new string[] { ",", "\n" };
+            var inputChecker = new CalculatorChecker(new EmptyInputChecker());
             var separatorProvider = new SeparatorProvider(separators);
             var numberExtractor = new NumberExtractor(separatorProvider);
             var numberParser = new NumberParser();
             var sumCalculator = new SumCalculator(numberParser);
-            var calculator = new StringCalculator(numberExtractor, sumCalculator);
+            var calculator = new StringCalculator(numberExtractor, sumCalculator, inputChecker);
             var result = calculator.Add(input);
             Assert.AreEqual(expected, result);
         }

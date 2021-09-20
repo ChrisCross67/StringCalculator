@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringCalculator\StringCalculator.csproj", "{0770EB57-7701-4FEC-AB30-C2356FA6A3E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringCalculator", "StringCalculator\StringCalculator.csproj", "{0770EB57-7701-4FEC-AB30-C2356FA6A3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorTests", "StringCalculatorTests\StringCalculatorTests.csproj", "{DA876FE0-0D41-459B-B550-BF70EA7FF8C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringCalculatorTests", "StringCalculatorTests\StringCalculatorTests.csproj", "{DA876FE0-0D41-459B-B550-BF70EA7FF8C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProject1", "SpecFlowProject1\SpecFlowProject1.csproj", "{54989999-285A-4338-A90B-6843B10D7401}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DA876FE0-0D41-459B-B550-BF70EA7FF8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA876FE0-0D41-459B-B550-BF70EA7FF8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA876FE0-0D41-459B-B550-BF70EA7FF8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54989999-285A-4338-A90B-6843B10D7401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54989999-285A-4338-A90B-6843B10D7401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54989999-285A-4338-A90B-6843B10D7401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54989999-285A-4338-A90B-6843B10D7401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

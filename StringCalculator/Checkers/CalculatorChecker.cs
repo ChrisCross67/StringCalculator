@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace StringCalculator
+namespace Calculator
 {
     public class CalculatorChecker : ICalculatorChecker
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StringCalculator
+namespace Calculator
 {
     public class SumCalculator : ISumCalculator
     {
@@ -8,6 +8,7 @@ namespace StringCalculator
         {
             _numberParser = numberParser;
         }
+
         private readonly System.Globalization.CultureInfo _culture = new System.Globalization.CultureInfo("en-US");
         private readonly INumberParser _numberParser;
 
@@ -26,12 +27,10 @@ namespace StringCalculator
             }
             return CorrectFloatingNumbers(result).ToString(_culture);
         }
+
         private static double CorrectFloatingNumbers(double result, int decimals = 1)
         {
             return Math.Round(result, decimals);
         }
-
     }
-
-
 }

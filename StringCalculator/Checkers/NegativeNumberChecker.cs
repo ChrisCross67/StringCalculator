@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace StringCalculator
+namespace Calculator
 {
     public class NegativeNumberChecker : IInputChecker
     {
@@ -17,7 +17,7 @@ namespace StringCalculator
             {
                 if (string.IsNullOrEmpty(number))
                     continue;
-                if (_numberParser.Parse(number) < 0)
+                if (_numberParser.TryParse(number, out var result) && result < 0)
                     negativeNumbers.Append($" {number},");
             }
             return negativeNumbers.Length > 1

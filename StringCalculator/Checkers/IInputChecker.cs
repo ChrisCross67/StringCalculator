@@ -1,4 +1,4 @@
-﻿namespace StringCalculator
+﻿namespace Calculator
 {
     public interface IInputChecker
     {

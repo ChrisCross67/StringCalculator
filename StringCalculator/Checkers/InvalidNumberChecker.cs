@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace StringCalculator
+namespace Calculator
 {
     public class InvalidNumberChecker : IInputChecker
     {

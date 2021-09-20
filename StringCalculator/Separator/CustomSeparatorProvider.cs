@@ -1,4 +1,4 @@
-﻿namespace StringCalculator
+﻿namespace Calculator
 {
     public class CustomSeparatorProvider : ISeparatorProvider
     {

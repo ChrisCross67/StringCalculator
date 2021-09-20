@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StringCalculator
+namespace Calculator
 {
     public class NumberExtractor : INumberExtractor
     {
@@ -13,7 +13,10 @@ namespace StringCalculator
         public string[] Exctract(string input)
         {
             var separators = _separatorProvider?.GetSeparators(ref input);
-            return input.Split(separators, StringSplitOptions.None);
+            var stringNumbers = input.Split(separators, StringSplitOptions.None);
+            if (stringNumbers.Length == 1 && string.IsNullOrEmpty(stringNumbers[0]))
+                return new string[]{ "0" };
+            return stringNumbers;
         }
     }
 }
